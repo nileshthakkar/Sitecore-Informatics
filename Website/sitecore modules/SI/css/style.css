@@ -1,0 +1,386 @@
+body
+{
+	color: #333;
+	font-size: 13px;
+	padding: 0px 0 40px;
+font-family: 'Roboto', sans-serif;
+margin:1;
+background-color: White;
+}
+table.content
+{
+	width: 100%; /*background-color: #333333; /*border-spacing: 1px;*/ /*margin-bottom: 15px;*/
+	border: 0;
+	border-color: White;
+}
+table.content tr th
+{
+	padding: 5px 0px 5px 2px;
+	background-color: #97BFEE;
+	text-align: left;
+	vertical-align: top;
+}
+table tbody tr td
+{
+	/*padding: 5px 0px 5px 2px;*/
+	background-color: #FFFFFF;
+	vertical-align: top;
+}
+.heading
+{
+	padding: 5px 0px 5px 2px; /*background-color: #CCCCCC;*/
+	background-color: #4390df;
+	text-align: left;
+	vertical-align: top;
+	border: 0px solid;
+	color: White;
+	font-weight: 500;
+	
+}
+h2
+{
+	padding: 0px 0px 0px 0px;
+	border-color: White;
+	border-width: 0px;
+}
+.settingname
+{
+	border-color: Black;
+	border-width: 1px;
+	border-bottom: 1px solid #7AB8C3;
+	border-left: 1px solid #7AB8C3;
+	border-right: 1px solid #7AB8C3;
+}
+.settingvalue
+{
+	border-color: Black;
+	border-width: 1px;
+	border-bottom: 1px solid #7AB8C3;
+	border-right: 1px solid #7AB8C3;
+}
+.aa
+{
+	border-color: White;
+	border-width: 0px;
+}
+.innersettingname
+{
+	color: #97bfee;
+}
+
+.innersettingvalue
+{
+	/*padding: 5px 0 0 35px;*/
+}
+.content td
+{
+	padding: 5px;
+}
+.outersettingvalue
+{
+	border-color: White;
+	border-width: 0px;
+}
+.sublayoutsummary
+{
+	font-weight: bold;
+}
+.value
+{
+	font-weight: bold;
+	background-color: Yellow;
+}
+.wrongvalue
+{
+	
+	background-color: dimgray;
+color: #fff;
+padding: 1px 4px;
+}
+.sublayoutsummarycount
+{
+	font-weight: bold;
+}
+.dateTime
+{
+	float: right;
+}
+
+
+
+/****************************************** NAVIGATION ************************************************************/
+
+#nav
+{
+	margin: 0;
+	padding: 7px 6px 0;
+	background: #3A5055;
+	line-height: 100%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+}
+#nav li
+{
+	margin: 0 5px;
+	padding: 0 0 8px;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+
+/* main level link */
+#nav a
+{	
+	color: #e7e5e5;
+	text-decoration: none;
+	display: block;
+	padding: 8px 20px;
+	margin: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+}
+#nav a:hover
+{
+	background: #000;
+	color: #fff;
+}
+
+/* main level link hover */
+#nav .current a, #nav li:hover > a
+{
+	background: #7AB8C3 /*url(img/colorbox/gradient.png) repeat-x 0 -40px*/;
+	color: #ffffff; /*border-top: solid 1px #f8f8f8; 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2); 	-moz-box-shadow: 0 1px 1px rgba(0,0,0, .2); 	box-shadow: 0 1px 1px rgba(0,0,0, .2); 	text-shadow: 0 1px 0 rgba(255,255,255, 1);*/
+}
+
+/* sub levels link hover */
+#nav ul li:hover a, #nav li:hover li a
+{
+	background: none;
+	border: none;
+	color: #666;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+#nav ul a:hover
+{
+	background: #0078ff url(img/gradient.png) repeat-x 0 -100px !important;
+	color: #fff !important;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	
+}
+
+/* clearfix */
+#nav:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#nav
+{
+	display: inline-block;
+	height: 38px;
+}
+html[xmlns] #nav
+{
+	display: block;
+}
+
+* html #nav
+{
+	height: 1%;
+}
+
+#nav.fixed
+{
+	position: fixed;
+	margin: 0 0 0 -8px;
+	top: 0;
+	box-shadow: 0 4px 8px -6px #000;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	width: 100%;
+}
+#nav.fixed + *
+{
+	padding-top: 70px;
+}
+
+.summary
+{
+	font-weight: bold;
+}
+.summarycount
+{
+	font-weight: bold;
+}
+.innersettingheadingname
+{
+	font-weight: bold;
+}
+.innersettingheadingvalue
+{
+	text-decoration: underline;
+}
+span.checked{background:url(img/checked.jpg) no-repeat; color:white; width:20px; height:20px; display:block;}
+span.unchecked{background:url(img/unchecked.jpg) no-repeat; color:white; width:20px; height:20px; display:block;}
+.templatepages{height:200px; overflow-x:auto;  }
+
+a{
+	font-weight:500;
+	color:#3A5055;
+}
+
+#templatepages_wrapper{
+padding: 10px;
+background: #93B8BF;
+color: #3A5055;
+}
+  .baseitemtemplate {
+            background-color: #97bfee;
+            color: white;
+            font-weight: bold;
+        }
+
+        .basetemplatecount {
+            font-weight: bold;
+            color: Yellow;
+        }
+
+        .totaltemplatecount {
+            font-weight: bold;
+            color: Yellow;
+        }
+
+        #nav a:active {
+            background: #000;
+            color: #fff;
+        }
+
+        .progressBar {
+            width: 128px;
+            height: 128px;
+            position: absolute;
+            left: 550px;
+            top: 400px;
+            text-align: center;
+            vertical-align: middle;
+            /*background-image: url('http://media.investis.com/i/ip3/assets/img/progress_bar.gif');*/
+			background: transparent url('gif-load.gif') no-repeat;
+        }
+
+        .templateicon {
+            height:16px;
+            width:16px;
+            vertical-align:text-bottom;
+			margin-right:10px;
+        }
+		
+		
+		
+		/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff;}
+#colorbox{}
+    #cboxTopLeft{width:25px; height:25px; background:url(img/colorbox/border1.png) no-repeat 0 0;}
+    #cboxTopCenter{height:25px; background:url(img/colorbox/border1.png) repeat-x 0 -50px;}
+    #cboxTopRight{width:25px; height:25px; background:url(img/colorbox/border1.png) no-repeat -25px 0;}
+    #cboxBottomLeft{width:25px; height:25px; background:url(img/colorbox/border1.png) no-repeat 0 -25px;}
+    #cboxBottomCenter{height:25px; background:url(img/colorbox/border1.png) repeat-x 0 -75px;}
+    #cboxBottomRight{width:25px; height:25px; background:url(img/colorbox/border1.png) no-repeat -25px -25px;}
+    #cboxMiddleLeft{width:25px; background:url(img/colorbox/border2.png) repeat-y 0 0;}
+    #cboxMiddleRight{width:25px; background:url(img/colorbox/border2.png) repeat-y -25px 0;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:20px;}
+        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
+        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
+        #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+        #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+        #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
+        #cboxLoadingOverlay{background:#fff url(img/colorbox/loading.gif) no-repeat 5px 5px;}
+        #cboxClose{position:absolute; bottom:0; right:0; display:block; color: #fff;
+background: #3A5055;
+padding: 2px 10px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+  The following provides PNG transparency support for IE6
+  Feel free to remove this and the /ie6/ directory if you have dropped IE6 support.
+*/
+.cboxIE6 #cboxTopLeft{background:url(img/colorbox/ie6/borderTopLeft.png);}
+.cboxIE6 #cboxTopCenter{background:url(img/colorbox/ie6/borderTopCenter.png);}
+.cboxIE6 #cboxTopRight{background:url(img/colorbox/ie6/borderTopRight.png);}
+.cboxIE6 #cboxBottomLeft{background:url(img/colorbox/ie6/borderBottomLeft.png);}
+.cboxIE6 #cboxBottomCenter{background:url(img/colorbox/ie6/borderBottomCenter.png);}
+.cboxIE6 #cboxBottomRight{background:url(img/colorbox/ie6/borderBottomRight.png);}
+.cboxIE6 #cboxMiddleLeft{background:url(img/colorbox/ie6/borderMiddleLeft.png);}
+.cboxIE6 #cboxMiddleRight{background:url(img/colorbox/ie6/borderMiddleRight.png);}
+
+.cboxIE6 #cboxTopLeft,
+.cboxIE6 #cboxTopCenter,
+.cboxIE6 #cboxTopRight,
+.cboxIE6 #cboxBottomLeft,
+.cboxIE6 #cboxBottomCenter,
+.cboxIE6 #cboxBottomRight,
+.cboxIE6 #cboxMiddleLeft,
+.cboxIE6 #cboxMiddleRight {
+    _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
+}
+.numberofpages
+{
+color:#7AB8C3;
+}
+
+.headingColumn
+{
+background: dimgray;
+color:white;
+width:20%;
+}
+
