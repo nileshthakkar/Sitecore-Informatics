@@ -428,7 +428,7 @@ namespace SI
                         if (Session["subLayouts"] == null)
                         {
                             layoutPath = SubLayoutFolderPath;
-                            string query = @"fast:" + layoutPath + "//*[@@templatename='Sublayout']";
+                            string query = @"fast:" + layoutPath + "//*[@@templatename='Sublayout' or @@templatename='Controller rendering' or @@templatename='Item rendering' or @@templatename='Method rendering' or @@templatename='Rendering' or @@templatename='Url rendering' or @@templatename='View rendering' or @@templatename='Webcontrol' or @@templatename='Xsl rendering']";
                             subLayouts = DB.SelectItems(query);
                             Session.Add("subLayouts", subLayouts);
                         }
@@ -684,7 +684,7 @@ namespace SI
             if (Session["subLayouts"] == null)
             {
                 layoutPath = SubLayoutFolderPath;
-                string query = @"fast:" + layoutPath + "//*[@@templatename='Sublayout']";
+                string query = @"fast:" + layoutPath + "//*[@@templatename='Sublayout' or @@templatename='Controller rendering' or @@templatename='Item rendering' or @@templatename='Method rendering' or @@templatename='Rendering' or @@templatename='Url rendering' or @@templatename='View rendering' or @@templatename='Webcontrol' or @@templatename='Xsl rendering']";
                 subLayouts = DB.SelectItems(query);
                 Session.Add("subLayouts", subLayouts);
             }
